@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "019699e5-0492-4248-ac28-4b36b67bdc9d",
+		"name": "RestExpressTemplate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2705735"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/users/fb414ddc-6e3b-4859-bb45-56d7389a64ba"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"16a5d517-fdfb-41fa-85a0-51cc3b510e8a\",\r\n    \"name\": \"Fred\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Applications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/users/fb414ddc-6e3b-4859-bb45-56d7389a64ba/app"
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:3000/users/74856012-7e1d-11ec-82de-062205c32318/app/submit"
+			},
+			"response": []
+		}
+	]
+}

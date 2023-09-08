@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Player {
+  id         String            @unique //GUID
+  name       String?
+  team       String
+  position   String
+  statistics PlayerStatistics?
+}
+
+model PlayerStatistics {
+  id               Int     @id @default(autoincrement())
+  player           Player  @relation(fields: [player_id], references: [id])
+  player_id        String  @unique
+  caps             Int
+  number_of_tries  Int
+  number_of_points Int
+  is_selected      Boolean @default(true)
+}
