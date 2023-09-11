@@ -1,8 +1,13 @@
 # rest-express-template
 
-An opinionated simple skeleton app for Express and Typescript, with an MVC project structure.
+An opinionated skeleton app for Express and Typescript REST API.
 
-Includes Prisma as an ORM layer on top of an embedded SQLite database.
+Uses:
+- Typescript
+- Express
+- MVC project structure
+- SQLite database
+- Prisma ORM
 
 ## Getting started
 
@@ -11,7 +16,7 @@ npm install
 npm run dev
 ```
 
-The server is now running on `http://localhost:3000`. You can now run API requests through the browser, e.g. [`http://localhost:3000/users`](http://localhost:3000/users).
+The server is now running on `http://localhost:3000`. You can now run API requests through the browser, e.g. [`http://localhost:3000/players`](http://localhost:3000/players).
 
 To query from postman, import the `RestExpressTemplate.postman_collection.json` file.
 

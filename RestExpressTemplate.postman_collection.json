@@ -7,56 +7,29 @@
 	},
 	"item": [
 		{
-			"name": "Get Users",
+			"name": "Get Players",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:3000/users"
+				"url": "localhost:3000/players"
 			},
 			"response": []
 		},
 		{
-			"name": "Get User",
+			"name": "Get Player",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:3000/users/fb414ddc-6e3b-4859-bb45-56d7389a64ba"
+				"url": "localhost:3000/players/b761d10f-a9e6-488c-920f-103bb00e7069"
 			},
 			"response": []
 		},
 		{
-			"name": "Create User",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"16a5d517-fdfb-41fa-85a0-51cc3b510e8a\",\r\n    \"name\": \"Fred\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:3000/users"
-			},
-			"response": []
-		},
-		{
-			"name": "Get Applications",
+			"name": "Get Player Stats",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "localhost:3000/users/fb414ddc-6e3b-4859-bb45-56d7389a64ba/app"
-			},
-			"response": []
-		},
-		{
-			"name": "Submit Application",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": "localhost:3000/users/74856012-7e1d-11ec-82de-062205c32318/app/submit"
+				"url": "localhost:3000/players/b761d10f-a9e6-488c-920f-103bb00e7069/stats"
 			},
 			"response": []
 		}
